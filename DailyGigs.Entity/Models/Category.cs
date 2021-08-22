@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace DailyGigs.Entity.Models
 {
-    class Category
+    public class Category
     {
+        public Guid id { get; set; }
+        public string Name { get; set; }
+        public string CategoryImageUrl { get; set; }
+
+        //Navigation Property
+        public List<Gig> Gigs { get; set; }
+
+        public Category(string Name)
+        {
+
+        }
+
     }
 }

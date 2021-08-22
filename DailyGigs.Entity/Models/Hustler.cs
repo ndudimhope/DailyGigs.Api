@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace DailyGigs.Entity.Models
 {
-    class Hustler
+    public class Hustler
     {
+        public Guid Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string ProfileImageUrl { get; set; }
+        public string Location { get; set; }
+        
     }
 }

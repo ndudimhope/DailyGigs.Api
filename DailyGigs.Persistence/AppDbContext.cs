@@ -28,13 +28,12 @@ namespace DailyGigs.Persistence
             base.OnModelCreating(modelBuilder);
 
             //seed data into Category
-            modelBuilder.Entity<Category>().HasData(new Category("Events"));
-            modelBuilder.Entity<Category>().HasData(new Category("Arts/Crafts"));
-            modelBuilder.Entity<Category>().HasData(new Category("Social Media"));
-            modelBuilder.Entity<Category>().HasData(new Category("Content Creation"));
+            modelBuilder.Entity<Category>().HasData(new Category { Id = 1 ,Name="Events"});
+            modelBuilder.Entity<Category>().HasData(new Category { Id = 2 ,Name = "Arts/Crafts" });
+            modelBuilder.Entity<Category>().HasData(new Category { Id = 3 ,Name = "Social Media" });
+            modelBuilder.Entity<Category>().HasData(new Category { Id = 4 ,Name = "Content Creation" });
 
 
-           
 
         }
 
